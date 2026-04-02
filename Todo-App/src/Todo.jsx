@@ -67,9 +67,9 @@ function Todo() {
         Add={Add}
         />
         <div className="filtered-buttons">
-            <button className={filter ==="all" ? "active-btn" : ""} onClick={()=>setFilter("all")}>All</button>
-            <button className={filter ==="completed" ? "active-btn" : ""} onClick={()=>setFilter("completed")}>Completed</button>
-            <button className={filter ==="pending" ? "active-btn" : ""} onClick={()=>setFilter("pending")}>Pending</button>
+            <button className={`all-btn ${filter==="all" ? "active-btn":""}`}onClick={()=>setFilter("all")}>All</button>
+            <button className={`completed-btn ${filter==="completed" ? "active-btn":""}`}onClick={()=>setFilter("completed")}>Completed</button>
+            <button className={`pending-btn ${filter==="pending" ? "active-btn":""}`}onClick={()=>setFilter("pending")}>Pending</button>
         </div>
         </div>
         <button className="clr-btn" onClick={clr}>Clear</button>
